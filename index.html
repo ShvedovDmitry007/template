@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="./img/logo.svg">
+    <link rel="preload" href="/fonts/roboto-v30-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/roboto-v30-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/roboto-v30-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/roboto-v30-latin-900.woff2" as="font" type="font/woff2" crossorigin>
+    <title>Template</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  
+    <link rel="stylesheet" href="/css/index.css">
+
+  </head>
+
+  <body> 
+    <header class="header">
+      <div class="container header__container">
+        <img class="header__logo logo" src="./img/logo.svg" width="68" height="68" alt="Логотип шаблонной компании">
+
+        <div class="header__feedback feedback">
+          <a class="feedback__phone-number" href="tel:+79625561234">+7 (962) 556 - 1234</a>
+
+          <button class="feedback__call-back">Перезвоните мне</button>
+        </div>
+        <img class="header__feedback-phone feedback-phone" src="./img/header_phone.svg" alt="Модальное окно обратная связь">
+      </div>
+    </header>
+
+    <main class="main">
+
+      <section class="hero">
+        <div class="container hero__container">
+          <h1 class="hero__title">Заголовок c уникальным торговым предложение по системе 4U</h1>
+
+          <p class="hero__description">
+            Описания предлжения компании. Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему.
+          </p>
+
+          <p class="hero__mobile">
+            Описания предлжения компании. Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более.
+          </p>
+          <a class="hero__link" href="#about">Подробнее</a>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container about__container">
+          <h2 class="about__title">Уникальный заголовок для преимущества компании</h2>
+
+          <p class="about__subtitle">О нас</p>
+
+          <p class="about__description">
+            Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить.
+          </p>
+
+          <ul class="about__list about-list">
+            <li class="about-list__item">
+              <span class="about-list__number">1</span>
+              <p class="about-list__text">Первое целевое преимущество</p>
+            </li>
+
+            <li class="about-list__item">
+              <span class="about-list__number">2</span>
+              <p class="about-list__text">Второе целевое преимущество</p>
+            </li>
+
+            <li class="about-list__item">
+              <span class="about-list__number">3</span>
+              <p class="about-list__text">Третье целевое преимущество</p>
+            </li>
+
+            <li class="about-list__item">
+              <span class="about-list__number">4</span>
+              <p class="about-list__text">Четвертое целевое преимущество</p>
+            </li>
+          </ul>
+
+          <!-- Slider main container -->
+          <div class="swiper about__swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper about__wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide about__slide">
+                <div class="about__slide-item">
+                  <span class="about__slide-number">1</span>
+                  <p class="about__slide-text">Первое целевое преимущество</p>
+                </div>
+              </div>
+              <div class="swiper-slide about__slide">
+                <div class="about__slide-item">
+                  <span class="about__slide-number">2</span>
+                  <p class="about__slide-text">Второе целевое преимущество</p>
+                </div>
+              </div>
+              <div class="swiper-slide about__slide">
+                <div class="about__slide-item">
+                  <span class="about__slide-number">3</span>
+                  <p class="about__slide-text">Третье целевое преимущество</p>
+                </div>
+              </div>
+              <div class="swiper-slide about__slide">
+                <div class="about__slide-item">
+                  <span class="about__slide-number">4</span>
+                  <p class="about__slide-text">Четвертое целевое преимущество</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev about__button-prev"></div>
+            <div class="swiper-button-next about__button-next"></div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container contact__container">
+          <h2 class="contact__title">Остались вопросы?</h2>
+
+          <p class="contact__subtitle">
+            Оставьте номер телефона, и мы перезвоним вам
+          </p>
+
+          <form class="contact__form form" action="https://jsonplaceholder.typicode.com/posts" method="POST" id="contact-form">
+            <fieldset class="form__group">
+              <input class="form__input" type="text" name="name" placeholder="Ваше имя" required>
+              <input class="form__input" type="tel" name="phone" placeholder="Телефон" required>
+              <input class="form__input" type="email" name="e-mail" placeholder="E-mail" required>
+            </fieldset>
+
+            <button class="contact__form-button" type="submit">позвоните мне</button>
+          </form>
+
+          <p class="contact__agreement-text">
+            Я даю своё <a class="contact__agreement" href="#">согласие</a>  на обработку моих персональных данных.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__logo-group">
+          <img class="footer__logo logo" src="./img/logo.svg" width="68" height="68" alt="Логотип шаблонной компании">
+
+          <p class="footer__copuright">
+            © 2022 XXXcompany. Все права защищены.
+          </p>
+        </div>
+
+        <p class="footer__developer">
+          Сделано <a class="footer__developer-link" href="https://t.me/dimashvedov_92" target="_blank">Дмитрием Шведовым</a> 
+        </p>
+
+        <div class="footer__feedback feedback">
+          <a class="feedback__phone-number" href="tel:+79625561234">+7 (962) 556 - 1234</a>
+
+          <button class="feedback__call-back">Перезвоните мне</button>
+        </div>
+
+        <img class="footer__feedback-phone feedback-phone" src="./img/header_phone.svg" alt="Модальное окно обратная связь">
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      let swiper = new Swiper('.swiper', {
+        slidesPerView: 1,
+        autoHeight: true,
+        effect: 'cube',
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+    </script>
+
+  </body>
+
+  
+</html>

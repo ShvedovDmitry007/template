@@ -1,0 +1,94 @@
+:root {
+  scroll-behavior: smooth;
+  position: relative;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  --white: #FFFFFF;
+  --blue: #15A9CB;
+  --blue-twitter: #23c7ec;
+  --grayish-purple: #383a4c;
+  --vk-color: #4a76a8;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+
+  position: relative;
+  overflow-x: hidden;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--white);
+  background-color: #F9F9F9;
+}
+
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  max-height: 100%;
+}
+
+
+button {
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+p,
+fieldset {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1600px;
+  padding: 0 200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1440px) {
+  .container {
+    padding: 0 122px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .container {
+    padding: 0 15px;
+  }
+}
