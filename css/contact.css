@@ -14,8 +14,8 @@
 }
 
 .contact__title {
-  margin-bottom: 16px;
-  font-weight: 700;
+  margin-right: 28px;
+  margin-bottom: 19px;
   font-size: 35px;
 }
 
@@ -38,12 +38,13 @@
   align-items: center;
   border: none;
   gap: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 49px;
 }
 
 .form__input {
+  padding: 9px 24px;
   width: 423px;
-  padding: 9px 25px;
+  height: 46px;
   border: 1.38px solid var(--white);
   border-radius: 50px;
   background-color: inherit;
@@ -53,7 +54,7 @@
 
 .contact__form-button {
   display: block;
-  margin-bottom: 50px;
+  margin-bottom: 53px;
   padding: 11px 38px;
   font-weight: 500;
   border-radius: 50px;
@@ -69,21 +70,35 @@
 
 
 @media (max-width: 1200px) {
+  .contact__container {
+    padding-bottom: 56px;
+  }
+
   .contact__title {
+    margin-right: 10px;
+    margin-bottom: 16px;
     font-size: 32px;
   }
 
   .contact__subtitle {
-    font-size: 20px;
+    padding-left: 17px;
+    letter-spacing: 0.6px;
+    font-size: 19px;
+  }
+
+  .form__group {
+    gap: 15px;
   }
 
   .form__input {
-    padding: 8px 23px;
-    width: 379px;
+    height: 43px;
+    padding: 8px 24px;
+    width: 380px;
     font-size: 20px;
   }
 
   .contact__form-button {
+    padding: 13px 38px;
     margin-bottom: 30px;
   }
 
@@ -100,12 +115,15 @@
   }
 
   .contact__title {
+    margin-right: 4px;
     font-size: 20px;
   }
 
   .contact__subtitle {
     margin-bottom: 35px;
     font-size: 12px;
+    padding-left: 0px;
+    letter-spacing: 0px;
   }
 
   .form__group {
@@ -113,15 +131,15 @@
     gap: 15px;
   }
 
-  
   .form__input {
     padding: 6px 18px;
     width: 290px;
+    height: 28px;
     font-size: 14px;
   }
 
   .contact__form-button {
-    padding: 10px 26px;
+    padding: 10px 33px;
     font-size: 16px;
   }
 

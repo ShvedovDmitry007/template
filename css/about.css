@@ -11,8 +11,7 @@
 }
 
 .about__title {
-  margin-bottom: 25px;
-  font-weight: 700;
+  margin-bottom: 26px;
   font-size: 35px;
   color: var(--grayish-purple);
 }
@@ -37,7 +36,7 @@
 
 .about__description {
   max-width: 720px;
-  margin-bottom: 50px;
+  margin-bottom: 59px;
   font-size: 18px;
   line-height: 1.4;
   color: var(--grayish-purple);
@@ -59,12 +58,11 @@
 }
 
 .about-list__number, .about__slide-number {
+  padding-top: 9px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 500;
   font-size: 57px;
-  line-height: 1;
   width: 122px;
   height: 122px;
   border-radius: 100%;
@@ -93,8 +91,6 @@
   align-items: center;
 }
 
-
-
 @media (max-width: 1366px) {
   .about__container {
     padding: 0 76px;
@@ -102,17 +98,22 @@
 }
 
 @media (max-width: 1200px) {
+  .about {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
   .about__container {
     padding:  0 30px;
   }
 
   .about__title {
     font-size: 32px;
-    margin-bottom: 23px;
+    margin-bottom: 24px;
   }
 
   .about__subtitle {
-    margin-bottom: 33px;
+    margin-bottom: 31px;
     font-size: 20px;
   }
 
@@ -122,10 +123,13 @@
   }
 
   .about-list__item {
-    flex-basis: 180px;
+    flex-basis: 181px;
+    gap: 27px;
   }
 
   .about-list__number, .about__slide-number {
+    padding-top: 3px;
+    font-size: 50px;
     width: 104px;
     height: 104px;
   }
@@ -136,19 +140,14 @@
   
 }
 
-@media (max-width: 1024px) {
-  .about {
-    padding-top: 30px;
-    padding-bottom: 60px;
-  }
-
+@media (max-width: 1000px) {
   .about__container {
     padding: 0 15px;
   }
 
   .about__title {
     font-size: 26px;
-    margin-bottom: 15px;
+    margin-bottom: 19px;
   }
 
   .about-list {
@@ -162,7 +161,7 @@
 
 @media (max-width: 768px) {
   .about {
-    padding-top: 30px;
+    padding-top: 32px;
     padding-bottom: 60px;
   }
 
@@ -171,7 +170,7 @@
   }
 
   .about__subtitle {
-    margin-bottom: 26px;
+    margin-bottom: 28px;
     font-size: 16px;
   }
 
@@ -180,6 +179,8 @@
   }
 
   .about__description {
+    font-size: 12px;
+    line-height: 1.40625;
     margin-bottom: 40px;
   }
 
@@ -193,11 +194,15 @@
     display: flex;
   }
 
+  .about__wrapper {
+    height: 182px
+  }
+
   .about__slide-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 24px;
     flex-basis: 182px;
   }
 }
