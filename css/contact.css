@@ -70,6 +70,10 @@
 
 
 @media (max-width: 1200px) {
+  .contact {
+    background-image: url('../img/form-bg-1024.jpg');
+  }
+
   .contact__container {
     padding-bottom: 56px;
   }
@@ -109,6 +113,10 @@
 
 
 @media (max-width: 768px) {
+  .contact {
+    background-image: url('../img/form-bg-mobile.jpg');
+  }
+  
   .contact__container {
     padding-top: 30px;
     padding-bottom: 30px;

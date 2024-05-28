@@ -38,13 +38,15 @@
   height: 24px;
 }
 
+@media (max-width: 1366px) {  
+  /* .header__container {
+    padding: 0 30px;
+  } */
+}
+
 @media (max-width: 1200px) {
   .header {
     padding-top: 26px;
-  }
-
-  .header__container {
-    padding: 0 30px;
   }
 
   .logo {
